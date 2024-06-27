@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Resolver equacoes exponenciais</h1>
+    <form method="post">
+        <label for="equation">Equação:</label>
+        <input type="text" id="equation" name="equation" placeholder="Ex: 2**x = 8">
+        <button type="submit">Resolver</button>
+    </form>
+    {% if solution %}
+    <h2>Solucao:</h2>
+    <p>{{ solution }}</p>
+    {% endif %}
+</body>
+</html>
